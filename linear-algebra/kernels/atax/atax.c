@@ -111,6 +111,8 @@ int main(int argc, char** argv)
      by the function call in argument. */
   polybench_prevent_dce(print_array(nx, POLYBENCH_ARRAY(y)));
 
+  print_array(nx, POLYBENCH_ARRAY(y));
+  
   /* Be clean. */
   POLYBENCH_FREE_ARRAY(A);
   POLYBENCH_FREE_ARRAY(x);
